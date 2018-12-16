@@ -55,7 +55,7 @@ for i in d:
                         oldfile.truncate()
                         for line in lines:
                             #match = re.match("src=\"(\d(\d)?C(.)+).png", str(line))
-                            if re.match("src=\"(\d(\d)?C(.)+).png", line):
+                            if re.match("src=\"(\d(\d)?C(.)+).(png|svg)", line):
                                 p1, p2 = line.split("src=\"")
                                 p3, p4 = p2.split("\" alt")
                                 p5, p6 = p3.split("lyx_img_")
